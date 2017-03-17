@@ -37,7 +37,12 @@ public class App {
 
     Event newEvent = new Event(numberOfGuests, foodChoice, beverageChoice, entertainmentChoice, couponCodesArray);
 
-    System.out.println("This event will cost: $" + newEvent.calculateCost());
+    System.out.println("Here are the details of your event:\n");
+    System.out.println("Number of guests: " + newEvent.getNumberOfGuests());
+    System.out.println("Food served: " + newEvent.getFoodChoice());
+    System.out.println("Beverages served: " + newEvent.getBeverageChoice());
+    System.out.println("Entertainment option: " + newEvent.getEntertainmentChoice());
+    System.out.println("Total cost: $" + newEvent.calculateCost());
 
   }
 
