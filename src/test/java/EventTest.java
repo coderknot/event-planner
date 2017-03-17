@@ -36,6 +36,6 @@ public class EventTest {
     @Test
     public void calculateCost_calculateEventCost_50() {
       Event testEvent = new Event(10, 1, 1, 1);
-      assertEquals(80, testEvent.calculateCost());
+      assertEquals(130, testEvent.calculateCost());
     }
 }
