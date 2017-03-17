@@ -33,7 +33,7 @@ public class Event {
   }
 
   public int calculateCost() {
-    return 0;
+    return (mNumberOfGuests * 5);
   }
 
 }
