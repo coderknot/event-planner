@@ -6,7 +6,7 @@ public class App {
     Console mainConsole = System.console();
     boolean programRunning = true;
 
-    while(programRunning) {
+    do {
       System.out.println("\n\n~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~");
       System.out.println("Welcome to the Event Planner!");
       System.out.println("\nOptions:");
@@ -16,16 +16,17 @@ public class App {
       System.out.println("Enter an option number and hit enter:");
       int navigationChoice = Integer.parseInt(mainConsole.readLine());
 
-      if(navigationChoice == 1) {
-        Event event = createEvent();
-        displayEvent(event);
-      } else if(navigationChoice == 2) {
-        programRunning = false;
-      } else {
-        System.out.println("\nInvalid input!");
-        System.out.println("");
+      if(Integer.valueOf(navigationChoice) instanceof Integer) {
+        if(navigationChoice == 1) {
+          Event event = createEvent();
+          displayEvent(event);
+        } else if(navigationChoice == 2) {
+          programRunning = false;
+        } else {
+          System.out.println("\nInvalid input!");
+        }
       }
-    }
+    } while(programRunning);
   }
 
   public static Event createEvent() {

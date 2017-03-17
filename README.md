@@ -15,7 +15,7 @@ A JAVA command line interface (CLI) application for an event planning service. T
 <http://github.com/coderknot/event-planner>
 * Compile App.java in event-planner/src/main/java/App.java
 * Run App.class in CLI
-* Follow Event Planner prompts
+* Provide input as indicated by Event Planner prompts
 
 ## Specifications
 
@@ -33,7 +33,7 @@ A JAVA command line interface (CLI) application for an event planning service. T
 |The program should apply the total discount from coupons to the event cost | new Event(10, 1, 1, 1, {"10-OFF-100","5-OFF-150"}) | Event Cost: 115 |
 
 ## Known Bugs
-No known bugs.
+User input must be entered as indicated by the application.
 
 ## Support and contact details
 Questions? Concerns? Suggestions?
