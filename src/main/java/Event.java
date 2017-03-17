@@ -4,17 +4,20 @@ public class Event {
   private String mFoodChoice;
   private String mBeverageChoice;
   private String mEntertainmentChoice;
+  private String[] mUserCouponCodes;
 
   private String[] mFoodChoices = {"Light Snacks"};
   private String[] mBeverageChoices = {"Water"};
   private String[] mEntertainmentChoices = {"Live Band"};
   private String[] mCouponCodes = {"100OFF"};
 
-  public Event(int numberOfGuests, int foodChoice, int beverageChoice, int entertainmentChoice) {
+  public Event(int numberOfGuests, int foodChoice, int beverageChoice, int entertainmentChoice, String[] couponCodes) {
     mNumberOfGuests = numberOfGuests;
     mFoodChoice = mFoodChoices[foodChoice - 1];
     mBeverageChoice = mBeverageChoices[beverageChoice - 1];
     mEntertainmentChoice = mEntertainmentChoices[entertainmentChoice - 1];
+
+    mUserCouponCodes = couponCodes;
   }
 
   public int getNumberOfGuests() {
@@ -33,8 +36,8 @@ public class Event {
     return mEntertainmentChoice;
   }
 
-  public String[] getCouponCodes() {
-    return mCouponCodes;
+  public String[] getUserCouponCodes() {
+    return mUserCouponCodes;
   }
 
   public int calculateCost() {
