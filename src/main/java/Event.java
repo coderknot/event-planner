@@ -43,6 +43,7 @@ public class Event {
     int foodCost = 0;
     int beverageCost = 0;
     int entertainmentCost = 0;
+    int discount = 0;
 
     for(String foodChoice : mFoodChoices) {
       if(mFoodChoice.equals("Light Snacks")) {
@@ -68,7 +69,9 @@ public class Event {
       }
     }
 
-    return guestsCost + foodCost + beverageCost + entertainmentCost;
+    discount = applyCoupons();
+
+    return (guestsCost + foodCost + beverageCost + entertainmentCost) - discount;
   }
 
   public int applyCoupons() {
