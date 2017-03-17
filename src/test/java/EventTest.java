@@ -14,4 +14,10 @@ public class EventTest {
       Event testEvent = new Event(10, 1, 1, 1);
       assertEquals(10, testEvent.getNumberOfGuests());
     }
+
+    @Test
+    public void getFoodChoice_getsFoodChoice_1() {
+      Event testEvent = new Event(10, 1, 1, 1);
+      assertEquals(1, testEvent.getFoodChoice());
+    }
 }
