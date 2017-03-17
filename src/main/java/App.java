@@ -18,7 +18,10 @@ public class App {
     int foodChoice = Integer.parseInt(console.readLine());
 
     System.out.println("What type of beverages are being served?");
-    System.out.println("1. Water");
+    System.out.println("1. Water, Juice, and Soda ($1 per guest)");
+    System.out.println("2. Option 1 + Light Bar ($2 per guest)");
+    System.out.println("3. Option 1 + Full Bar ($3 per guest)");
+
     int beverageChoice = Integer.parseInt(console.readLine());
 
     System.out.println("What type of entertainment is being provided?");
