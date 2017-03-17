@@ -3,19 +3,20 @@ import java.io.Console;
 public class App {
 
   public static void main(String[] args) {
-    boolean isRunning = true;
+    boolean programRunning = true;
 
-    while(isRunning) {
+    System.out.println("Welcome to the Event Planner!");
+    while(programRunning) {
       Event event = createEvent();
       displayEvent(event);
-      isRunning = false;
+      programRunning = false;
     }
   }
 
   public static Event createEvent() {
     Console console = System.console();
 
-    System.out.println("Event Planner");
+    System.out.println("New Event:");
 
     System.out.println("How many guests will be attending?");
     int numberOfGuests = Integer.parseInt(console.readLine());
