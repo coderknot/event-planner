@@ -33,7 +33,18 @@ public class Event {
   }
 
   public int calculateCost() {
-    return (mNumberOfGuests * 5);
+    int guestsCost = mNumberOfGuests * 5;
+    int foodCost = 0;
+
+    for(String foodChoice : foodChoices) {
+      if(mFoodChoice.equals("Light Snacks")) {
+        foodCost = mNumberOfGuests * 2;
+      } else {
+        foodCost = 0;
+      }
+    }
+
+    return guestsCost + foodCost;
   }
 
 }
