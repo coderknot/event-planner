@@ -25,7 +25,8 @@ public class App {
     int beverageChoice = Integer.parseInt(console.readLine());
 
     System.out.println("What type of entertainment is being provided?");
-    System.out.println("1. Live Band");
+    System.out.println("1. Live Band ($5 per guest)");
+    System.out.println("2. DJ ($3 per guest)");
     int entertainmentChoice = Integer.parseInt(console.readLine());
 
     System.out.println("Do you have a coupon code?");
