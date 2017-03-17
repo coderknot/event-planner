@@ -72,6 +72,16 @@ public class Event {
   }
 
   public int applyCoupons() {
-    return 0;
+    int totalDiscount = 0;
+
+    for(String userCouponCode : mUserCouponCodes) {
+      if (userCouponCode.equals("10-OFF-100")) {
+        totalDiscount += 10;
+      } else {
+        totalDiscount += 0;
+      }
+    }
+
+    return totalDiscount;
   }
 }
