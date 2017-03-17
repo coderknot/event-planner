@@ -47,10 +47,12 @@ public class EventTest {
     }
 
     @Test
-    public void calculateCost_calculateEventCost_50() {
-      String[] testCouponCodes = {"10-OFF-100"};
+    public void calculateCost_calculateEventCost_130() {
+      // String[] testCouponCodes = {"10-OFF-100"};
+      String[] testCouponCodes = new String[0];
+
       Event testEvent = new Event(10, 1, 1, 1, testCouponCodes);
-      assertEquals(120, testEvent.calculateCost());
+      assertEquals(130, testEvent.calculateCost());
     }
 
     @Test
@@ -65,5 +67,12 @@ public class EventTest {
       String[] testCouponCodes = {"10-OFF-100", "5-OFF-150"};
       Event testEvent = new Event(10, 1, 1, 1, testCouponCodes);
       assertEquals(15, testEvent.applyCoupons());
+    }
+
+    @Test
+    public void calculateCost_applyDiscountFromCouponsToEventCost_115() {
+      String[] testCouponCodes = {"10-OFF-100", "5-OFF-150"};
+      Event testEvent = new Event(10, 1, 1, 1, testCouponCodes);
+      assertEquals(115, testEvent.calculateCost());
     }
 }
