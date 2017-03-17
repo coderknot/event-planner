@@ -15,4 +15,9 @@ public class Event {
   public int getFoodChoice() {
     return mFoodChoice;
   }
+
+  public int getBeverageChoice() {
+    return 0;
+  }
+
 }
