@@ -35,6 +35,7 @@ public class Event {
   public int calculateCost() {
     int guestsCost = mNumberOfGuests * 5;
     int foodCost = 0;
+    int beverageCost = 0;
 
     for(String foodChoice : foodChoices) {
       if(mFoodChoice.equals("Light Snacks")) {
@@ -44,7 +45,15 @@ public class Event {
       }
     }
 
-    return guestsCost + foodCost;
+    for(String beverageChoice : beverageChoices) {
+      if(mBeverageChoice.equals("Water")) {
+        beverageCost = mNumberOfGuests * 1;
+      } else {
+        beverageCost = 0;
+      }
+    }
+
+    return guestsCost + foodCost + beverageCost;
   }
 
 }
