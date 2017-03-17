@@ -3,16 +3,17 @@ public class Event {
   int mNumberOfGuests;
   String mFoodChoice;
   String mBeverageChoice;
-  int mEntertainmentChoice;
+  String mEntertainmentChoice;
 
   String[] foodChoices = {"Light Snacks"};
   String[] beverageChoices = {"Water"};
+  String[] entertainmentChoices = {"Live Band"};
 
   public Event(int numberOfGuests, int foodChoice, int beverageChoice, int entertainmentChoice) {
     mNumberOfGuests = numberOfGuests;
     mFoodChoice = foodChoices[foodChoice - 1];
     mBeverageChoice = beverageChoices[beverageChoice - 1];
-    mEntertainmentChoice = entertainmentChoice;
+    mEntertainmentChoice = entertainmentChoices[entertainmentChoice - 1];
   }
 
   public int getNumberOfGuests() {
@@ -27,7 +28,7 @@ public class Event {
     return mBeverageChoice;
   }
 
-  public int getEntertainmentChoice() {
+  public String getEntertainmentChoice() {
     return mEntertainmentChoice;
   }
 
