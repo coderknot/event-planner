@@ -32,4 +32,8 @@ public class Event {
     return mEntertainmentChoice;
   }
 
+  public int calculateCost() {
+    return 0;
+  }
+
 }
