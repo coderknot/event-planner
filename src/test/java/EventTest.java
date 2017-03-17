@@ -57,6 +57,6 @@ public class EventTest {
     public void applyCoupons_applyCouponsToEventCost_10() {
       String[] testCouponCodes = {"10-OFF-100"};
       Event testEvent = new Event(10, 1, 1, 1, testCouponCodes);
-      assertEquals(10, testEvent.applyCoupons);
+      assertEquals(10, testEvent.applyCoupons());
     }
 }

@@ -71,4 +71,7 @@ public class Event {
     return guestsCost + foodCost + beverageCost + entertainmentCost;
   }
 
+  public int applyCoupons() {
+    return 0;
+  }
 }
