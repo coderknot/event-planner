@@ -43,6 +43,6 @@ public class EventTest {
     public void getCouponCodes_getsCouponCodes_100OF() {
       Event testEvent = new Event(10, 1, 1, 1);
       String[] expectedOutput = {"100OFF"};
-      assertEquals("100OFF", testEvent.getCouponCodes);
+      assertEquals("100OFF", testEvent.getCouponCodes());
     }
 }

@@ -32,6 +32,11 @@ public class Event {
     return mEntertainmentChoice;
   }
 
+  public String[] getCouponCodes() {
+    String[] codes = {""};
+    return codes;
+  }
+
   public int calculateCost() {
     int guestsCost = mNumberOfGuests * 5;
     int foodCost = 0;
