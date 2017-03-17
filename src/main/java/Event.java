@@ -1,9 +1,11 @@
 public class Event {
 
   int mNumberOfGuests;
+  int mFoodChoice;
 
   public Event(int numberOfGuests, int foodChoice, int beverageChoice, int entertainmentChoice) {
     mNumberOfGuests = numberOfGuests;
+    mFoodChoice = foodChoice;
   }
 
   public int getNumberOfGuests() {
@@ -11,6 +13,6 @@ public class Event {
   }
 
   public int getFoodChoice() {
-    return 0;
+    return mFoodChoice;
   }
 }
