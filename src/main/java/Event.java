@@ -1,13 +1,13 @@
 public class Event {
 
-  int mNumberOfGuests;
-  String mFoodChoice;
-  String mBeverageChoice;
-  String mEntertainmentChoice;
+  private int mNumberOfGuests;
+  private String mFoodChoice;
+  private String mBeverageChoice;
+  private String mEntertainmentChoice;
 
-  String[] foodChoices = {"Light Snacks"};
-  String[] beverageChoices = {"Water"};
-  String[] entertainmentChoices = {"Live Band"};
+  private String[] foodChoices = {"Light Snacks"};
+  private String[] beverageChoices = {"Water"};
+  private String[] entertainmentChoices = {"Live Band"};
 
   public Event(int numberOfGuests, int foodChoice, int beverageChoice, int entertainmentChoice) {
     mNumberOfGuests = numberOfGuests;
