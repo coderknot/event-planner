@@ -5,8 +5,6 @@ public class App {
   public static void main(String[] args) {
     Console console = System.console();
 
-    String[] couponCodes = {"10-OFF-100"};
-
     System.out.println("Event Planner");
 
     System.out.println("How many guests will be attending?");
@@ -24,7 +22,12 @@ public class App {
     System.out.println("1. Live Band");
     int entertainmentChoice = Integer.parseInt(console.readLine());
 
-    Event newEvent = new Event(numberOfGuests, foodChoice, beverageChoice, entertainmentChoice, couponCodes);
+    System.out.println("Do you have a coupon code?");
+    System.out.println("10-OFF-100");
+    String couponCodes = console.readLine();
+    String[] couponCodesArray = couponCodes.split(" ");
+
+    Event newEvent = new Event(numberOfGuests, foodChoice, beverageChoice, entertainmentChoice, couponCodesArray);
 
     System.out.println("This event will cost: $" + newEvent.calculateCost());
 
