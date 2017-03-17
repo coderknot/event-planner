@@ -9,4 +9,8 @@ public class Event {
   public int getNumberOfGuests() {
     return mNumberOfGuests;
   }
+
+  public int getFoodChoice() {
+    return 0;
+  }
 }
