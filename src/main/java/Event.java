@@ -3,11 +3,13 @@ public class Event {
   int mNumberOfGuests;
   int mFoodChoice;
   int mBeverageChoice;
+  int mEntertainmentChoice;
 
   public Event(int numberOfGuests, int foodChoice, int beverageChoice, int entertainmentChoice) {
     mNumberOfGuests = numberOfGuests;
     mFoodChoice = foodChoice;
     mBeverageChoice = beverageChoice;
+    mEntertainmentChoice = entertainmentChoice;
   }
 
   public int getNumberOfGuests() {
@@ -23,7 +25,7 @@ public class Event {
   }
 
   public int getEntertainmentChoice() {
-    return 0;
+    return mEntertainmentChoice;
   }
 
 }
