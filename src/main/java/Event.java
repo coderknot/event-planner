@@ -6,7 +6,7 @@ public class Event {
   private String mEntertainmentChoice;
   private String[] mUserCouponCodes;
 
-  private String[] mFoodChoices = {"Light Snacks"};
+  private String[] mFoodChoices = {"Light Snacks", "Meal", "Meal + Dessert"};
   private String[] mBeverageChoices = {"Water"};
   private String[] mEntertainmentChoices = {"Live Band"};
 
@@ -48,6 +48,10 @@ public class Event {
     for(String foodChoice : mFoodChoices) {
       if(mFoodChoice.equals("Light Snacks")) {
         foodCost = mNumberOfGuests * 2;
+      } else if(mFoodChoice.equals("Meal")) {
+        foodCost = mNumberOfGuests * 3;
+      } else if(mFoodChoice.equals("Meal + Dessert")) {
+        foodCost = mNumberOfGuests * 4;
       } else {
         foodCost = 0;
       }

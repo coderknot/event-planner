@@ -11,7 +11,10 @@ public class App {
     int numberOfGuests = Integer.parseInt(console.readLine());
 
     System.out.println("What type of food is being served?");
-    System.out.println("1. Light Snacks");
+    System.out.println("1. Light Snacks ($2 per guest)");
+    System.out.println("2. Meal ($3 per guest)");
+    System.out.println("3. Meal + Desert ($4 per guest)");
+
     int foodChoice = Integer.parseInt(console.readLine());
 
     System.out.println("What type of beverages are being served?");
