@@ -29,8 +29,9 @@ public class App {
     System.out.println("2. DJ ($3 per guest)");
     int entertainmentChoice = Integer.parseInt(console.readLine());
 
-    System.out.println("Do you have a coupon code?");
+    System.out.println("Would you like to apply a coupon? Separate coupon codes with a space.");
     System.out.println("10-OFF-100");
+    System.out.println("5-OFF-150");
     String couponCodes = console.readLine();
     String[] couponCodesArray = couponCodes.split(" ");
 

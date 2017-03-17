@@ -90,6 +90,8 @@ public class Event {
     for(String userCouponCode : mUserCouponCodes) {
       if (userCouponCode.equals("10-OFF-100")) {
         totalDiscount += 10;
+      } else if(userCouponCode.equals("5-OFF-150")) {
+        totalDiscount += 5;
       } else {
         totalDiscount += 0;
       }

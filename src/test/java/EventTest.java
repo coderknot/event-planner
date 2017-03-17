@@ -28,7 +28,7 @@ public class EventTest {
     public void getBeverageChoice_getsBeverageChoice_1() {
       String[] testCouponCodes = {"10-OFF-100"};
       Event testEvent = new Event(10, 1, 1, 1, testCouponCodes);
-      assertEquals("Water", testEvent.getBeverageChoice());
+      assertEquals("Water, Juice, and Soda", testEvent.getBeverageChoice());
     }
 
     @Test
@@ -58,5 +58,12 @@ public class EventTest {
       String[] testCouponCodes = {"10-OFF-100"};
       Event testEvent = new Event(10, 1, 1, 1, testCouponCodes);
       assertEquals(10, testEvent.applyCoupons());
+    }
+
+    @Test
+    public void applyCoupons_applyMultipleCouponsToEventCost_15() {
+      String[] testCouponCodes = {"10-OFF-100", "5-OFF-150"};
+      Event testEvent = new Event(10, 1, 1, 1, testCouponCodes);
+      assertEquals(15, testEvent.applyCoupons());
     }
 }
