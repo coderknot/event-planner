@@ -40,14 +40,17 @@ public class App {
 
       Event newEvent = new Event(numberOfGuests, foodChoice, beverageChoice, entertainmentChoice, couponCodesArray);
 
-      System.out.println("Here are the details of your event:\n");
-      System.out.println("Number of guests: " + newEvent.getNumberOfGuests());
-      System.out.println("Food served: " + newEvent.getFoodChoice());
-      System.out.println("Beverages served: " + newEvent.getBeverageChoice());
-      System.out.println("Entertainment option: " + newEvent.getEntertainmentChoice());
-      System.out.println("Total cost: $" + newEvent.calculateCost());
-
+      displayEvent(newEvent);
       isRunning = false;
     }
+  }
+
+  public static void displayEvent(Event event) {
+    System.out.println("Here are the details of your event:\n");
+    System.out.println("Number of guests: " + event.getNumberOfGuests());
+    System.out.println("Food served: " + event.getFoodChoice());
+    System.out.println("Beverages served: " + event.getBeverageChoice());
+    System.out.println("Entertainment option: " + event.getEntertainmentChoice());
+    System.out.println("Total cost: $" + event.calculateCost());
   }
 }
