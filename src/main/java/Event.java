@@ -5,15 +5,16 @@ public class Event {
   private String mBeverageChoice;
   private String mEntertainmentChoice;
 
-  private String[] foodChoices = {"Light Snacks"};
-  private String[] beverageChoices = {"Water"};
-  private String[] entertainmentChoices = {"Live Band"};
+  private String[] mFoodChoices = {"Light Snacks"};
+  private String[] mBeverageChoices = {"Water"};
+  private String[] mEntertainmentChoices = {"Live Band"};
+  private String[] mCouponCodes = {"100OFF"};
 
   public Event(int numberOfGuests, int foodChoice, int beverageChoice, int entertainmentChoice) {
     mNumberOfGuests = numberOfGuests;
-    mFoodChoice = foodChoices[foodChoice - 1];
-    mBeverageChoice = beverageChoices[beverageChoice - 1];
-    mEntertainmentChoice = entertainmentChoices[entertainmentChoice - 1];
+    mFoodChoice = mFoodChoices[foodChoice - 1];
+    mBeverageChoice = mBeverageChoices[beverageChoice - 1];
+    mEntertainmentChoice = mEntertainmentChoices[entertainmentChoice - 1];
   }
 
   public int getNumberOfGuests() {
@@ -33,8 +34,7 @@ public class Event {
   }
 
   public String[] getCouponCodes() {
-    String[] codes = {""};
-    return codes;
+    return mCouponCodes;
   }
 
   public int calculateCost() {
@@ -43,7 +43,7 @@ public class Event {
     int beverageCost = 0;
     int entertainmentCost = 0;
 
-    for(String foodChoice : foodChoices) {
+    for(String foodChoice : mFoodChoices) {
       if(mFoodChoice.equals("Light Snacks")) {
         foodCost = mNumberOfGuests * 2;
       } else {
@@ -51,7 +51,7 @@ public class Event {
       }
     }
 
-    for(String beverageChoice : beverageChoices) {
+    for(String beverageChoice : mBeverageChoices) {
       if(mBeverageChoice.equals("Water")) {
         beverageCost = mNumberOfGuests * 1;
       } else {
@@ -59,7 +59,7 @@ public class Event {
       }
     }
 
-    for(String entertainmentChoice : entertainmentChoices) {
+    for(String entertainmentChoice : mEntertainmentChoices) {
       if(mEntertainmentChoice.equals("Live Band")) {
         entertainmentCost = mNumberOfGuests * 5;
       } else {
