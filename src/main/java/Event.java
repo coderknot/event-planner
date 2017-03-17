@@ -9,14 +9,12 @@ public class Event {
   private String[] mFoodChoices = {"Light Snacks"};
   private String[] mBeverageChoices = {"Water"};
   private String[] mEntertainmentChoices = {"Live Band"};
-  private String[] mCouponCodes = {"100OFF"};
 
   public Event(int numberOfGuests, int foodChoice, int beverageChoice, int entertainmentChoice, String[] couponCodes) {
     mNumberOfGuests = numberOfGuests;
     mFoodChoice = mFoodChoices[foodChoice - 1];
     mBeverageChoice = mBeverageChoices[beverageChoice - 1];
     mEntertainmentChoice = mEntertainmentChoices[entertainmentChoice - 1];
-
     mUserCouponCodes = couponCodes;
   }
 
