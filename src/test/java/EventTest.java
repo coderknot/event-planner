@@ -30,6 +30,6 @@ public class EventTest {
     @Test
     public void getEntertainmentChoice_getsEntertainmentChoice_1() {
       Event testEvent = new Event(10, 1, 1, 1);
-      assertEquals(1, testEvent.getEntertainmentChoice());
+      assertEquals("Live Band", testEvent.getEntertainmentChoice());
     }
 }
