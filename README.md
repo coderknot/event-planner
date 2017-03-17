@@ -5,7 +5,7 @@
 #### Author: John Carr
 
 ## Description
-A JAVA command line interface (CLI) application for an event planning service. This program allows the customer to create a new event in the system, storing number of guests, food choices, beverage choices, and entertainment options based on the customer's decisions. Coupons may also be applied to events, granting the customer a discounted cost!
+A JAVA command line interface (CLI) application for an event planning service. This program allows the customer to create a new event in the system, storing number of guests, food choices, beverage choices, and entertainment options based on the customer's decisions. Coupons may also be applied to events, granting the customer a discounted cost! Customers may create additional events or exit the application.
 
 ![Event Planner CLI](/img/event-planner-cli.jpg?raw=true "Event Planner CLI")
 
