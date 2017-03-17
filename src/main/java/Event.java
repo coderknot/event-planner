@@ -22,4 +22,8 @@ public class Event {
     return mBeverageChoice;
   }
 
+  public int getEntertainmentChoice() {
+    return 0;
+  }
+
 }
