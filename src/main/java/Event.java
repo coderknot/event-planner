@@ -22,8 +22,8 @@ public class Event {
     return mFoodChoice;
   }
 
-  public int getBeverageChoice() {
-    return mBeverageChoice;
+  public String getBeverageChoice() {
+    return "";
   }
 
   public int getEntertainmentChoice() {
