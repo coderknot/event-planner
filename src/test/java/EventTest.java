@@ -48,9 +48,7 @@ public class EventTest {
 
     @Test
     public void calculateCost_calculateEventCost_130() {
-      // String[] testCouponCodes = {"10-OFF-100"};
       String[] testCouponCodes = new String[0];
-
       Event testEvent = new Event(10, 1, 1, 1, testCouponCodes);
       assertEquals(130, testEvent.calculateCost());
     }
